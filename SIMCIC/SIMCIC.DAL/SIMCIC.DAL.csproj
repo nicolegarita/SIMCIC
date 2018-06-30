@@ -45,6 +45,17 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>BD.settings</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\ICategoriaMedicamento.cs" />
+    <Compile Include="Interfaces\ICita.cs" />
+    <Compile Include="Interfaces\IDiagnostico.cs" />
+    <Compile Include="Interfaces\IMedicamento.cs" />
+    <Compile Include="Interfaces\IPaciente.cs" />
+    <Compile Include="Metodos\MBase.cs" />
+    <Compile Include="Metodos\MCategoriaMedicamento.cs" />
+    <Compile Include="Metodos\MCita.cs" />
+    <Compile Include="Metodos\MDiagnostico.cs" />
+    <Compile Include="Metodos\MMedicamento.cs" />
+    <Compile Include="Metodos\MPaciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,9 +71,6 @@
       <LastGenOutput>BD.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Metodos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

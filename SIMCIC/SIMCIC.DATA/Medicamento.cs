@@ -14,6 +14,9 @@ namespace SIMCIC.DATA
         public int IdCategoria { get; set; }
         public string Suministracion { get; set; }
         public string FechaVencimiento { get; set; }
-       
+        public string DosisNiños { get; set; }
+        public string DosisAdulto { get; set; }
+
+
     }
 }

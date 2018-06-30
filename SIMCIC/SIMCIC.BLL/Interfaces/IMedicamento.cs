@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SIMCIC.DATA
+namespace SIMCIC.BLL.Interfaces
 {
-    public class Diagnosticos
+    public interface IMedicamento
     {
-
     }
 }
