@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIMCIC.DATA;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace SIMCIC.DAL.Interfaces
 {
     public interface ICategoriaMedicamento
     {
+        List<CategoriaMedicamento> ListarCategorias();
     }
 }

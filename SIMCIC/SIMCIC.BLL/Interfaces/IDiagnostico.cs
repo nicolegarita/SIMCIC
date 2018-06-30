@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIMCIC.DATA;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,16 @@ namespace SIMCIC.BLL.Interfaces
 {
     public interface IDiagnostico
     {
+        //Mostrar
+        List<Diagnostico> ListarDiagnosticos();
+
+        void InsertarDiagnostico(Diagnostico diagnostico);
+        void ActualizarDiagnostico(Diagnostico diagnostico);
+        Diagnostico BuscarDiagnosticoPorId(int idDiagnostico);
+
+
+        //Filtrado
+        List<Diagnostico> ListarDiagnosticoPorCita(int idCita);
+        List<Diagnostico> ListarDiagnosticosPorPaciente(int idPaciente);
     }
 }
