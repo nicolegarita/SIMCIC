@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace SIMCIC
 {
-    public partial class InicioSesion : System.Web.UI.Page
+    public partial class Formularios : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-        }
 
-        protected void lbOlvidar_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MantenimientoUsuario.aspx");
         }
     }
 }

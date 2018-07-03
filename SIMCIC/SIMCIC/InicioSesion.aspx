@@ -2,49 +2,52 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-<section runat="server">
-    <div runat="server">
-        <div class="row">
-
-            <div class="col-lg-12">
-                <asp:Label ID="lblCorreo" runat="server" Text="Correo: " Font-Bold="True" ForeColor="#3FBBC0"></asp:Label>
-                <div class="form-group">
-                    <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" placeholder="Correo"></asp:TextBox>
-                </div>
-            </div>
-
-            <div class="col-lg-12">
-                <asp:Label ID="lblContra" runat="server" Text="Contraseña: " Font-Bold="True" ForeColor="#3FBBC0"></asp:Label>
-                <div class="form-group">
-                    <asp:TextBox ID="txtContra" runat="server" CssClass="form-control" placeholder="Contraseña"></asp:TextBox>
-                </div>
-            </div>
-
-            <div class="col-lg-12">
-                <asp:Button ID="Button1" runat="server" Text="Ingresar" />
-           
-            </div>
-
-            <div class="col-lg-12">
-
-                <%--<asp:LinkButton ID="lbOlvidar" runat="server"
-                    Style="float: right; padding-top: 15px"
-                    Text="¿Olvidó su contraseña?" OnClick="lbOlvidar_Click"
-                    ForeColor="#3FBBC0"></asp:LinkButton>--%>
-            </div>
+    <form runat="server">
+        <div class="active" style="border-style: none; border-color: #FFFFFF; background-image: url('img/prueba.png'); height: 196px;">
         </div>
+        <section>
+            <div class="tab-content panel-footer" style="background-color: #FFFFFF">
+                <div runat="server" class="panel-group">
+                    <div class="container ">
+                        <div class="col-lg-6 col-lg-offset-3" style="border: medium groove #E0E0E0">
+                            <br />
+                            <br />
+                            <br />
+                            <div class="inner-form">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <asp:TextBox ID="txtCorreo" runat="server" type="email" placeholder="Correo" class="form-control"></asp:TextBox>
+                                </div>
+                                <br />
+                                <br />
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <asp:TextBox ID="txtContra" runat="server" type="password" placeholder="Contraseña" class="form-control"></asp:TextBox>
+                                </div>
+                                <br />
+                                <div class="col-lg-12" runat="server">
+                                    <asp:LinkButton ID="lbOlvidar" runat="server"
+                                        Text="¿Olvidó su contraseña?" OnClick="lbOlvidar_Click"
+                                        ForeColor="#0099FF" BorderStyle="None" Font-Bold="False"></asp:LinkButton>
+                                </div>
+                                <div runat="server" class="active">
+                                    <asp:Button ID="btnIngresar" runat="server" Style="float: right" Text="Ingresar" class="btn btn-form"
+                                        Width="103px" BorderStyle="None" Font-Bold="False" Font-Italic="False" CssClass="btn-info" ForeColor="White" Height="38px" />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-
-
-</section>
-
-
-
-
-
+        </section>
+    </form>
 
 </asp:Content>
