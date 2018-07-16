@@ -192,6 +192,9 @@
     <Content Include="js\jquery.easing.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="Readme.txt" />
+    <Content Include="RegistrarMedicamentos.aspx" />
+    <Content Include="RegistroClientes.aspx" />
+    <Content Include="RegistroDiagnostico.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -303,6 +306,27 @@
       <DependentUpon>Principal.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarMedicamentos.aspx.cs">
+      <DependentUpon>RegistrarMedicamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarMedicamentos.aspx.designer.cs">
+      <DependentUpon>RegistrarMedicamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroClientes.aspx.cs">
+      <DependentUpon>RegistroClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroClientes.aspx.designer.cs">
+      <DependentUpon>RegistroClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroDiagnostico.aspx.cs">
+      <DependentUpon>RegistroDiagnostico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroDiagnostico.aspx.designer.cs">
+      <DependentUpon>RegistroDiagnostico.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
