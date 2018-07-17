@@ -4,6 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form runat="server">
+        <div class="container ">           
             <table class="table-condensed" align="center">
                 <h3 align="center">Registro de diagnósticos</h3>
                 <tr>
@@ -80,9 +81,98 @@
                          <asp:TextBox ID="txtIPX" runat="server" placeholder="IPX" class="form-control" TextMode="MultiLine"></asp:TextBox>
                 </tr>
             </table>
+                  
+        <div class="container">
+  <h2></h2>
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Cálculos</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Cálculos</h4>
+        </div>
+        <div class="modal-body">          
+            <div class="inner-form">
+                <p>IMC</p>
+                <asp:Label ID="lblPesoIMC" runat="server" Text="Peso" ForeColor="#808080"></asp:Label>
+                <br />
+                <div class="input-group">                   
+                    <asp:TextBox ID="txtPesoIMC" runat="server" placeholder="Kilogramos" class="form-control"></asp:TextBox>
+                </div>
+            </div>
+            <div class="inner-form">
+                <asp:Label ID="lblAlturaIMC" runat="server" Text="Altura" ForeColor="#808080"></asp:Label>
+                <br />
+                <div class="input-group">                   
+                    <asp:TextBox ID="txtAlturaIMC"  placeholder="Metros" runat="server" class="form-control"></asp:TextBox>
+                </div>
+            </div>
+            <div class="inner-form">
+                <asp:Label ID="lblResultadoIMC" runat="server" Text="Resultado" ForeColor="#808080"></asp:Label>
+                <br />
+                <div class="input-group">                   
+                    <asp:TextBox ID="txtResultadoIMC" runat="server" class="form-control" ReadOnly="True"></asp:TextBox>
+                </div>
+            </div>
+              <br />
+              <br />
+            <div class="btn-group">
+                <asp:Button ID="btnCalcular" runat="server" Text="Calcular"  CssClass="btn btn-primary" Width="100px"/>
+            </div>
+
+
+             <div class="inner-form">
+                <p>Dosificación</p>
+                <asp:Label ID="lblPesoDosi" runat="server" Text="Peso" ForeColor="#808080"></asp:Label>
+                <br />
+                <div class="input-group">                   
+                    <asp:TextBox ID="txtPesoDosi" runat="server" placeholder="Kilogramos" class="form-control"></asp:TextBox>
+                </div>
+            </div>
+            <div class="inner-form">
+                <asp:Label ID="lblDosis" runat="server" Text="Dosis" ForeColor="#808080"></asp:Label>
+                <br />
+                <div class="input-group">                   
+                    <asp:TextBox ID="txtDosis"  placeholder="Miligramos" runat="server" class="form-control"></asp:TextBox>
+                </div>
+            </div>
+            <div class="inner-form">
+                <asp:Label ID="lblFrecuencia" runat="server" Text="Frecuencia" ForeColor="#808080"></asp:Label>
+                <br />
+                <div class="input-group">                   
+                    <asp:TextBox ID="txtFrecuencia"  placeholder="Frecuencia" runat="server" class="form-control"></asp:TextBox>
+                </div>
+            </div>
+             <div class="inner-form">
+                <asp:Label ID="lblResultadoDosi" runat="server" Text="Resultado" ForeColor="#808080"></asp:Label>
+                <br />
+                <div class="input-group">                   
+                    <asp:TextBox ID="txtResultadoDosi" runat="server" class="form-control" ReadOnly="True"></asp:TextBox>
+                </div>
+            </div>
+            <br />
+              <br />
+             <div class="btn-group">
+                <asp:Button ID="btnCalcularDosi" runat="server" Text="Calcular"  CssClass="btn btn-primary" Width="100px"/>
+            </div>
+             
+
+      
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+           
+            
             <div class="btn-group">
                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="btn btn-primary" Width="100px"/>
             </div>
+        </div>
     </form>
 
 </asp:Content>

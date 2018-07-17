@@ -193,6 +193,7 @@
     <Content Include="js\jquery.min.js" />
     <Content Include="Readme.txt" />
     <Content Include="RegistrarMedicamentos.aspx" />
+    <Content Include="RegistroCita.aspx" />
     <Content Include="RegistroClientes.aspx" />
     <Content Include="RegistroDiagnostico.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -312,6 +313,13 @@
     </Compile>
     <Compile Include="RegistrarMedicamentos.aspx.designer.cs">
       <DependentUpon>RegistrarMedicamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroCita.aspx.cs">
+      <DependentUpon>RegistroCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroCita.aspx.designer.cs">
+      <DependentUpon>RegistroCita.aspx</DependentUpon>
     </Compile>
     <Compile Include="RegistroClientes.aspx.cs">
       <DependentUpon>RegistroClientes.aspx</DependentUpon>
