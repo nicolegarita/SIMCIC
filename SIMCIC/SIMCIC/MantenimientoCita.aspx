@@ -11,7 +11,7 @@
                         <asp:Label ID="lblCategoria" runat="server" Text="Criterio de Busqueda: " ForeColor="#808080"></asp:Label></td>
                     <td>
                         <asp:DropDownList ID="ddlSexo" runat="server" Width="278px"  class="form-control">
-                            <asp:ListItem>Fecha</asp:ListItem>
+                            <asp:ListItem>Fecha/asp:ListItem>
                             <asp:ListItem>Telefono</asp:ListItem>                         
                         </asp:DropDownList>                                              
                 </tr>
