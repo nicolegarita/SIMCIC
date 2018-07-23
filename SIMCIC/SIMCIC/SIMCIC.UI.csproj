@@ -176,6 +176,8 @@
     <Content Include="InicioSesion.aspx" />
     <Content Include="MantenimientoPerfil.aspx" />
     <Content Include="MantenimientoUsuario.aspx" />
+    <Content Include="ModificacionMedicamento.aspx" />
+    <Content Include="ModificacionPacientes.aspx" />
     <Content Include="Principal.Master" />
     <Content Include="Login.Master" />
     <Content Include="Formularios.Master" />
@@ -298,6 +300,20 @@
     </Compile>
     <Compile Include="MantenimientoUsuario.aspx.designer.cs">
       <DependentUpon>MantenimientoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionMedicamento.aspx.cs">
+      <DependentUpon>ModificacionMedicamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionMedicamento.aspx.designer.cs">
+      <DependentUpon>ModificacionMedicamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionPacientes.aspx.cs">
+      <DependentUpon>ModificacionPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionPacientes.aspx.designer.cs">
+      <DependentUpon>ModificacionPacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
