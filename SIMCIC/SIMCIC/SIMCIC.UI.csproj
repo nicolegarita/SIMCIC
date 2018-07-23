@@ -174,8 +174,11 @@
     <Content Include="img\prueba.png" />
     <Content Include="Index.aspx" />
     <Content Include="InicioSesion.aspx" />
+    <Content Include="MantenimientoCita.aspx" />
     <Content Include="MantenimientoPerfil.aspx" />
     <Content Include="MantenimientoUsuario.aspx" />
+    <Content Include="ModificacionMedicamento.aspx" />
+    <Content Include="ModificacionPacientes.aspx" />
     <Content Include="Principal.Master" />
     <Content Include="Login.Master" />
     <Content Include="Formularios.Master" />
@@ -285,6 +288,13 @@
     <Compile Include="Login.Master.designer.cs">
       <DependentUpon>Login.Master</DependentUpon>
     </Compile>
+    <Compile Include="MantenimientoCita.aspx.cs">
+      <DependentUpon>MantenimientoCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCita.aspx.designer.cs">
+      <DependentUpon>MantenimientoCita.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MantenimientoPerfil.aspx.cs">
       <DependentUpon>MantenimientoPerfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -298,6 +308,20 @@
     </Compile>
     <Compile Include="MantenimientoUsuario.aspx.designer.cs">
       <DependentUpon>MantenimientoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionMedicamento.aspx.cs">
+      <DependentUpon>ModificacionMedicamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionMedicamento.aspx.designer.cs">
+      <DependentUpon>ModificacionMedicamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionPacientes.aspx.cs">
+      <DependentUpon>ModificacionPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionPacientes.aspx.designer.cs">
+      <DependentUpon>ModificacionPacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
