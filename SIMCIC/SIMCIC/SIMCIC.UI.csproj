@@ -174,6 +174,7 @@
     <Content Include="img\prueba.png" />
     <Content Include="Index.aspx" />
     <Content Include="InicioSesion.aspx" />
+    <Content Include="MantenimientoCita.aspx" />
     <Content Include="MantenimientoPerfil.aspx" />
     <Content Include="MantenimientoUsuario.aspx" />
     <Content Include="ModificacionMedicamento.aspx" />
@@ -286,6 +287,13 @@
     </Compile>
     <Compile Include="Login.Master.designer.cs">
       <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCita.aspx.cs">
+      <DependentUpon>MantenimientoCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCita.aspx.designer.cs">
+      <DependentUpon>MantenimientoCita.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoPerfil.aspx.cs">
       <DependentUpon>MantenimientoPerfil.aspx</DependentUpon>
