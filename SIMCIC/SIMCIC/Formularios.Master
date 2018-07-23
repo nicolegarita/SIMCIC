@@ -1,10 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Formularios.master.cs" Inherits="SIMCIC.Formularios" %>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,10 +12,8 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
      <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
   <!-- =======================================================
     Theme Name: Medilab
     Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
@@ -27,7 +21,6 @@
     Author URL: https://bootstrapmade.com
   ======================================================= -->
 </head>
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   
      <div style="height: 148px;">
@@ -46,19 +39,16 @@
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="InicioSesion.aspx">Inicio</a></li>
-                <li class=""><a href="#MantenimientoPerfil.aspx">Perfil</a></li>
-                <li class=""><a href="#about">About</a></li>
-                <li class=""><a href="#testimonial">Testimonial</a></li>
+                <li class=""><a href="RegistrarMedicamentos.aspx">Medicamentos</a></li>
+                <li class=""><a href="RegistroClientes.aspx">Pacientes</a></li>
+                <li class=""><a href="RegistroDiagnostico.aspx">Diagnosticos</a></li>               
                 <li class=""><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-
    </div>
-
-
      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
             </asp:ContentPlaceHolder>
@@ -86,17 +76,13 @@
     </div>
   </footer>
   <!--/ footer-->
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
-
 </body>
-
 </html>
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
