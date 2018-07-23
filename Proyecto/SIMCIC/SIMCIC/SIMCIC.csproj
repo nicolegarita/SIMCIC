@@ -9,13 +9,13 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C3F942E2-E17E-4100-96A7-D25C9000CDF5}</ProjectGuid>
+    <ProjectGuid>{54C4EA03-901C-4495-A91D-59F71476806F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SIMCIC</RootNamespace>
     <AssemblyName>SIMCIC</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -46,21 +46,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="ServiceStack.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Common.5.1.0\lib\net45\ServiceStack.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Interfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Interfaces.5.1.0\lib\net45\ServiceStack.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.OrmLite, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.OrmLite.5.1.0\lib\net45\ServiceStack.OrmLite.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.OrmLite.SqlServer, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.5.1.0\lib\net45\ServiceStack.OrmLite.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Text, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Text.5.1.0\lib\net45\ServiceStack.Text.dll</HintPath>
-    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -151,13 +136,14 @@
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="contactform\contactform.js" />
-    <Content Include="contactform\Readme.txt" />
+    <Content Include="contactform\readme.txt" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="css\scss-files.txt" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -175,60 +161,39 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="img\1.png" />
-    <Content Include="img\2.png" />
-    <Content Include="img\3.png" />
-    <Content Include="img\icc.png" />
-    <Content Include="img\icon.png" />
-    <Content Include="img\LogoC.png" />
-    <Content Include="img\prueba.png" />
-    <Content Include="InicioSesion.aspx" />
-    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff2" />
-    <Content Include="lib\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="lib\ionicons\fonts\ionicons.eot" />
-    <Content Include="lib\ionicons\fonts\ionicons.ttf" />
-    <Content Include="lib\ionicons\fonts\ionicons.woff" />
-    <Content Include="Formularios.Master" />
-    <Content Include="Login.Master" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="img\apple-touch-icon.png" />
-    <Content Include="img\logo.png" />
-    <Content Include="index.html" />
-    <Content Include="js\main.js" />
-    <Content Include="lib\animate\animate.css" />
-    <Content Include="lib\animate\animate.min.css" />
-    <Content Include="lib\bootstrap\css\bootstrap.css" />
-    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
-    <Content Include="lib\bootstrap\js\bootstrap.bundle.min.js" />
-    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
-    <Content Include="lib\easing\easing.js" />
-    <Content Include="lib\easing\easing.min.js" />
-    <Content Include="lib\font-awesome\css\font-awesome.css" />
-    <Content Include="lib\font-awesome\css\font-awesome.min.css" />
-    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="lib\ionicons\css\ionicons.css" />
-    <Content Include="lib\ionicons\css\ionicons.min.css" />
-    <Content Include="lib\ionicons\fonts\ionicons.svg" />
-    <Content Include="lib\jquery\jquery-migrate.min.js" />
-    <Content Include="lib\jquery\jquery.min.js" />
-    <Content Include="lib\magnific-popup\magnific-popup.css" />
-    <Content Include="lib\magnific-popup\magnific-popup.js" />
-    <Content Include="lib\magnific-popup\magnific-popup.min.js" />
-    <Content Include="lib\superfish\hoverIntent.js" />
-    <Content Include="lib\superfish\superfish.js" />
-    <Content Include="lib\superfish\superfish.min.js" />
-    <Content Include="lib\wow\wow.js" />
-    <Content Include="lib\wow\wow.min.js" />
+    <Content Include="img\1.png" />
+    <Content Include="img\2.png" />
+    <Content Include="img\3.png" />
+    <Content Include="img\icon.png" />
+    <Content Include="img\LogoC.png" />
+    <Content Include="img\prueba.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="InicioSesion.aspx" />
+    <Content Include="MantenimientoCita.aspx" />
     <Content Include="MantenimientoPerfil.aspx" />
     <Content Include="MantenimientoUsuario.aspx" />
+    <Content Include="ModificacionMedicamento.aspx" />
+    <Content Include="ModificacionPacientes.aspx" />
+    <Content Include="Principal.Master" />
+    <Content Include="Login.Master" />
+    <Content Include="Formularios.Master" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="img\bg-banner.jpg" />
+    <Content Include="img\doctor1.jpg" />
+    <Content Include="img\doctor2.jpg" />
+    <Content Include="img\doctor3.jpg" />
+    <Content Include="img\doctor4.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\thumb.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.min.js" />
     <Content Include="Readme.txt" />
     <Content Include="RegistrarMedicamentos.aspx" />
     <Content Include="RegistroCita.aspx" />
@@ -302,6 +267,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InicioSesion.aspx.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -316,6 +288,13 @@
     <Compile Include="Login.Master.designer.cs">
       <DependentUpon>Login.Master</DependentUpon>
     </Compile>
+    <Compile Include="MantenimientoCita.aspx.cs">
+      <DependentUpon>MantenimientoCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCita.aspx.designer.cs">
+      <DependentUpon>MantenimientoCita.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MantenimientoPerfil.aspx.cs">
       <DependentUpon>MantenimientoPerfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -329,6 +308,27 @@
     </Compile>
     <Compile Include="MantenimientoUsuario.aspx.designer.cs">
       <DependentUpon>MantenimientoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionMedicamento.aspx.cs">
+      <DependentUpon>ModificacionMedicamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionMedicamento.aspx.designer.cs">
+      <DependentUpon>ModificacionMedicamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionPacientes.aspx.cs">
+      <DependentUpon>ModificacionPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionPacientes.aspx.designer.cs">
+      <DependentUpon>ModificacionPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrarMedicamentos.aspx.cs">
@@ -397,15 +397,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SIMCIC.BLL\SIMCIC.BLL.csproj">
-      <Project>{1a293afc-4a49-4917-9114-28a2d2f78177}</Project>
+      <Project>{db00eb7d-78b2-417b-af54-367aa93a8c64}</Project>
       <Name>SIMCIC.BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\SIMCIC.DAL\SIMCIC.DAL.csproj">
-      <Project>{19e26e97-510f-4a98-a9d2-6ebce81eb313}</Project>
+      <Project>{0c9f65c2-477d-4a7d-990a-3854c9cc0808}</Project>
       <Name>SIMCIC.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\SIMCIC.DATA\SIMCIC.DATA.csproj">
-      <Project>{e06ccda0-e63d-4650-be5c-3280277f8550}</Project>
+      <Project>{c513ab89-cc79-431a-8884-5b912c124bf8}</Project>
       <Name>SIMCIC.DATA</Name>
     </ProjectReference>
   </ItemGroup>
@@ -422,9 +422,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50734</DevelopmentServerPort>
+          <DevelopmentServerPort>53027</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50734/</IISUrl>
+          <IISUrl>http://localhost:53027/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
