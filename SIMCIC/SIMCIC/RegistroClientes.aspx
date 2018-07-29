@@ -2,6 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    
+    <div class="alert alert-success" visible="false" id="mensaje" runat="server">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
+        <strong id="textoMensaje" runat="server"></strong>
+    </div>
+        <div class="alert alert-danger" visible="false" id="mensajeError" runat="server">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
+        <strong id="textoMensajeError" runat="server"></strong>
+    </div> 
+    
     <form runat="server">
      <div id="divClientes" class="form-group" runat="server" visible="true" >
             <table class="table-condensed" align="center">
