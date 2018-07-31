@@ -13,31 +13,67 @@ namespace SIMCIC {
     public partial class RegistroCita {
         
         /// <summary>
-        /// divClientes control.
+        /// mensaje control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divClientes;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl mensaje;
         
         /// <summary>
-        /// lbFecha control.
+        /// textoMensaje control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbFecha;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl textoMensaje;
         
         /// <summary>
-        /// Calendar1 control.
+        /// mensajeError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl mensajeError;
+        
+        /// <summary>
+        /// textoMensajeError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl textoMensajeError;
+        
+        /// <summary>
+        /// divCitas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divCitas;
+        
+        /// <summary>
+        /// lblFecha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFecha;
+        
+        /// <summary>
+        /// txtFecha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFecha;
         
         /// <summary>
         /// lblHora control.
@@ -74,24 +110,6 @@ namespace SIMCIC {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
-        
-        /// <summary>
-        /// lblApellidos control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblApellidos;
-        
-        /// <summary>
-        /// txtApellidos control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApellidos;
         
         /// <summary>
         /// lblTelefono control.
@@ -137,5 +155,14 @@ namespace SIMCIC {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardar;
+        
+        /// <summary>
+        /// btnMantenimiento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnMantenimiento;
     }
 }

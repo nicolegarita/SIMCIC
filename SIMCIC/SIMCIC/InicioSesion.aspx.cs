@@ -11,12 +11,17 @@ namespace SIMCIC
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void lbOlvidar_Click(object sender, EventArgs e)
         {
             Response.Redirect("MantenimientoUsuario.aspx");
+        }
+
+        protected void btnIngresar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegistrarMedicamentos.aspx");
         }
     }
 }
