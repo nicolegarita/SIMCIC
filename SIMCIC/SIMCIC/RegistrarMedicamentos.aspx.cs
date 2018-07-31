@@ -30,16 +30,16 @@ namespace SIMCIC
             {
                 Medicamento medicamento = new Medicamento
                 {
-
+                    
                     NombreMedicamento = txtNombre.Text,
                     Cantidad = Convert.ToInt32(txtCantidad.Text),
                     Suministracion = txtSuministracion.Text,
-                    FechaVencimiento = txtFechaVencimiento.Text,
+                    FechaVencimiento = txtFecha.Value,
                     DosisAdulto = txtDosisAdulto.Text,
                     DosisNiños = txtDosisNiños.Text,
                     IdCategoria = ddlCategoria.SelectedIndex
 
-
+                    
                 };
 
                 med.InsertarMedicamento(medicamento);
@@ -61,5 +61,9 @@ namespace SIMCIC
             }
         }
 
+        protected void btnMantenimiento_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MantenimientoMedicamento.aspx");
+        }
     }
-}
+    }

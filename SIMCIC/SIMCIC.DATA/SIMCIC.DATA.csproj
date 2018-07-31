@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C513AB89-CC79-431A-8884-5B912C124BF8}</ProjectGuid>
+    <ProjectGuid>{E06CCDA0-E63D-4650-BE5C-3280277F8550}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SIMCIC.DATA</RootNamespace>
     <AssemblyName>SIMCIC.DATA</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CategoriaMedicamento.cs" />
     <Compile Include="Cita.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Diagnostico.cs" />
     <Compile Include="Medicamento.cs" />
     <Compile Include="Paciente.cs" />

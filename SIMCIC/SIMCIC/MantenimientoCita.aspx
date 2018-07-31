@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h3 align="center">Mantenimiento de citas</h3>   
+      <h3 align="center">Mantenimiento de citas</h3>   
     <div id="divBusqueda" class="form-group" runat="server" visible="true" >
 
          <table class="table-condensed" align="center">
@@ -107,4 +107,5 @@
                 <asp:Button ID="btnEliminar" runat="server" Text="Eliminar"  CssClass="btn btn-danger" Width="100px"/>
             </div>
         </div>
+
 </asp:Content>
