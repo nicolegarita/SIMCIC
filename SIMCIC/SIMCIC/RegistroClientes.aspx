@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Formularios.Master" AutoEventWireup="true" CodeBehind="RegistroClientes.aspx.cs" Inherits="SIMCIC.RegistroClientes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Registro de pacientes</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-    
+   
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensaje" runat="server"></strong>
@@ -12,9 +12,7 @@
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensajeError" runat="server"></strong>
     </div> 
-    
-    <form runat="server">
-     <div id="divClientes" class="form-group" runat="server" visible="true" >
+    <div id="divClientes" class="form-group" runat="server" visible="true" >
             <table class="table-condensed" align="center">
                 <h3 align="center">Registro de pacientes</h3>
                 <tr>
@@ -51,9 +49,10 @@
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
                         <asp:Label ID="lblSexo" runat="server" Text="Sexo: " ForeColor="#808080"></asp:Label></td>
                     <td>
-                        <asp:DropDownList ID="ddlSexo" runat="server" Width="278px" CssClass="control-label">
+                        <asp:DropDownList ID="ddlSexo" runat="server" Width="278px" class="form-control">
                             <asp:ListItem>Femenino</asp:ListItem>
                             <asp:ListItem>Masculino</asp:ListItem>
+                            <asp:ListItem>Otro</asp:ListItem>
                         </asp:DropDownList>
                 </tr>
                 <tr>
@@ -75,9 +74,11 @@
                          <asp:TextBox ID="txtOcupacion" runat="server" placeholder="Ocupación" class="form-control"></asp:TextBox>
                 </tr>
             </table>
-            <div class="btn-group">
+           <div class="col-md-12 text-center">
                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="btn btn-primary" Width="100px"/>
+            <asp:Button ID="btnMantenimiento" runat="server" OnClick="btnMantenimiento_Click" Text="Mantenimiento" CssClass="btn btn-success" Width="150
+                    px"/>
             </div>
-        </div>
-        </form>
+               </div>
+  
 </asp:Content>

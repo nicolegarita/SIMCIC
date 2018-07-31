@@ -1,10 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Formularios.Master" AutoEventWireup="true" CodeBehind="RegistroDiagnostico.aspx.cs" Inherits="SIMCIC.RegistroDiagnostico" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
-        <div class="container ">           
+   
+    <div class="container ">           
             <table class="table-condensed" align="center">
                 <h3 align="center">Registro de diagnósticos</h3>
                 <tr>
@@ -80,11 +79,14 @@
                     <td>
                          <asp:TextBox ID="txtIPX" runat="server" placeholder="IPX" class="form-control" TextMode="MultiLine"></asp:TextBox>
                 </tr>
+
             </table>
-                  
+               </div>   
         <div class="container">
   <h2></h2>
+          
   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Cálculos</button>
+                
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -166,13 +168,15 @@
       </div>
     </div>
   </div>
-</div>
-           
-            
-            <div class="btn-group">
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="btn btn-primary" Width="100px"/>
+</div>                    
+                   <div class="col-md-12 text-center">
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar"  CssClass="btn btn-primary" Width="100px"/>
+             <div class="col-md-12 text-right">
+                <asp:Button ID="btnMantenimiento" runat="server" OnClick="btnMantenimiento_Click" Text="Mantenimiento" CssClass="btn btn-success" Width="150
+                    px"/>
             </div>
+                       </div>
         </div>
-    </form>
-
+     <br />
+     <br />  
 </asp:Content>

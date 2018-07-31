@@ -27,8 +27,7 @@ namespace SIMCIC
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
 
-            try
-            {
+
                 Paciente paciente = new Paciente
                 {
                     Cedula = Convert.ToInt32(txtCedula.Text),
@@ -47,18 +46,12 @@ namespace SIMCIC
                 mensajeError.Visible = false;
                 mensaje.InnerHtml = "Paciente registrado satisfactoriamente";
 
+       
+        }
 
-
-
-            }
-
-
-            catch (Exception)
-            {
-                mensaje.Visible = false;
-                mensajeError.Visible = true;
-                mensajeError.InnerHtml = "No se registró el paciente";
-            }
+        protected void btnMantenimiento_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MantenimientoPacientes.aspx");
         }
     }
 }
