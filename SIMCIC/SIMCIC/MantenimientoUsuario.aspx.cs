@@ -15,13 +15,6 @@ namespace SIMCIC
             div3.Visible = false;
         }
 
-        protected void btnVerificar_Click(object sender, EventArgs e)
-        {
-            div1.Visible = false;
-            div2.Visible = true;
-            div3.Visible = false;
-        }
-
         protected void btnVerificarCodigo_Click(object sender, EventArgs e)
         {
             div1.Visible = false;
@@ -30,6 +23,13 @@ namespace SIMCIC
         }
 
         protected void btnActualizar_Click(object sender, EventArgs e)
+        {
+            div1.Visible = false;
+            div2.Visible = true;
+            div3.Visible = false;
+        }
+
+        protected void btnVerificar_Click(object sender, EventArgs e)
         {
 
         }

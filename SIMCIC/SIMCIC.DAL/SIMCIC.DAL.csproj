@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C9F65C2-477D-4A7D-990A-3854C9CC0808}</ProjectGuid>
+    <ProjectGuid>{19E26E97-510F-4A98-A9D2-6EBCE81EB313}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SIMCIC.DAL</RootNamespace>
     <AssemblyName>SIMCIC.DAL</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD.cs" />
     <Compile Include="BD.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -75,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SIMCIC.DATA\SIMCIC.DATA.csproj">
-      <Project>{c513ab89-cc79-431a-8884-5b912c124bf8}</Project>
+      <Project>{e06ccda0-e63d-4650-be5c-3280277f8550}</Project>
       <Name>SIMCIC.DATA</Name>
     </ProjectReference>
   </ItemGroup>
@@ -87,6 +88,5 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
