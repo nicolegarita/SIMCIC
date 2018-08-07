@@ -16,9 +16,9 @@ namespace SIMCIC.DAL.Metodos
             _db.Update(cita);
         }
 
-        public Cita BuscarCita(string hora, string fecha)
+        public Cita BuscarCita(string hora, string fecha, int cedulaMedico)
         {
-            return _db.Select<Cita>(x => x.Fecha == fecha && x.Hora == hora).FirstOrDefault();
+            return _db.Select<Cita>(x => x.Fecha == fecha && x.Hora == hora && x.CedulaMedico == cedulaMedico).FirstOrDefault();
         }
 
         public void InsertarCita(Cita cita)
@@ -31,6 +31,24 @@ namespace SIMCIC.DAL.Metodos
             return _db.Select<Cita>(x => x.CedulaMedico == cedulaMedico);
         }
 
-        
+        public void EliminarCita(int idCita)
+        {
+            _db.Delete<Cita>(x => x.IdCita == idCita);
+        }
+
+        public List<Cita> ListarCitasPorFecha(int cedulaMedico, string fecha)
+        {
+            return _db.Select<Cita>(x => x.CedulaMedico == cedulaMedico && x.Fecha == fecha);
+        }
+
+        public List<Cita> ListarCitasPorHora(int cedulaMedico, string hora)
+        {
+            return _db.Select<Cita>(x => x.CedulaMedico == cedulaMedico && x.Hora == hora);
+        }
+
+        public List<Cita> ListarCitasPorFechaHora(int cedulaMedico, string hora, string fecha)
+        {
+            return _db.Select<Cita>(x => x.CedulaMedico == cedulaMedico && x.Hora == hora && x.Fecha == fecha);
+        }
     }
 }

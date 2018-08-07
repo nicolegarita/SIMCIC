@@ -15,10 +15,10 @@ namespace SIMCIC.BLL.Metodos
             cit.ActualizarCita(cita);
         }
 
-    
-        public Cita BuscarCita(string hora, string fecha)
+
+        public Cita BuscarCita(string hora, string fecha, int cedulaMedico)
         {
-            return cit.BuscarCita(hora, fecha);
+            return cit.BuscarCita(hora, fecha, cedulaMedico);
         }
 
         public void InsertarCita(Cita cita)
@@ -26,14 +26,31 @@ namespace SIMCIC.BLL.Metodos
             cit.InsertarCita(cita);
         }
 
-      
+
         public List<Cita> ListarCitasPorMedico(int cedulaMedico)
         {
             return cit.ListarCitasPorMedico(cedulaMedico);
         }
 
-        
 
-        
+        public void EliminarCita(int idCita)
+        {
+            cit.EliminarCita(idCita);
+        }
+
+        public List<Cita> ListarCitasPorFecha(int cedulaMedico, string fecha)
+        {
+            return cit.ListarCitasPorFecha(cedulaMedico, fecha);
+        }
+
+        public List<Cita> ListarCitasPorHora(int cedulaMedico, string hora)
+        {
+            return cit.ListarCitasPorHora(cedulaMedico, hora);
+        }
+
+        public List<Cita> ListarCitasPorFechaHora(int cedulaMedico, string hora, string fecha)
+        {
+            return cit.ListarCitasPorFechaHora(cedulaMedico, hora, fecha);
+        }
     }
 }
