@@ -75,9 +75,5 @@ namespace SIMCIC
 
         }
 
-        protected void btnMantenimiento_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

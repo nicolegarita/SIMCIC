@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Formularios.Master" AutoEventWireup="true" CodeBehind="RegistroCita.aspx.cs" Inherits="SIMCIC.RegistroCita" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -25,11 +26,7 @@
 
                  <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
-                        <asp:Label ID="lbFecha" runat="server" Text="Fecha: " ForeColor="#808080"></asp:Label>
-                    <td>
-
-
-                    <td>
+                        <asp:Label ID="lbFecha" runat="server" Text="Fecha: " ForeColor="#808080"></asp:Label></td>
                         <asp:TextBox ID="txtFecha" runat="server" Width="400px" TextMode="Date"></asp:TextBox></td>
                 </tr>
 
