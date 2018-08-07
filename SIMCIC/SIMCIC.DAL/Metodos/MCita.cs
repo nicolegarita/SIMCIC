@@ -50,5 +50,11 @@ namespace SIMCIC.DAL.Metodos
         {
             return _db.Select<Cita>(x => x.CedulaMedico == cedulaMedico && x.Hora == hora && x.Fecha == fecha);
         }
+
+        public Cita BuscarCitaId(int idCita)
+        {
+            return _db.Select<Cita>(x => x.IdCita == idCita)
+                .FirstOrDefault();
+        }
     }
 }

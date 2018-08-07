@@ -12,6 +12,7 @@ namespace SIMCIC.BLL.Interfaces
         void InsertarCita(Cita cita);
         void ActualizarCita(Cita cita);
         Cita BuscarCita(string hora, string fecha, int cedulaMedico);
+        Cita BuscarCitaId(int idCita);
 
         //Filtrado
         List<Cita> ListarCitasPorMedico(int cedulaMedico);
