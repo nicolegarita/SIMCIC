@@ -14,8 +14,7 @@ namespace SIMCIC.BLL.Metodos
         {
             cit.ActualizarCita(cita);
         }
-
-    
+        
         public Cita BuscarCita(string hora, string fecha, int cedulaMedico)
         {
             return cit.BuscarCita(hora, fecha, cedulaMedico);
@@ -26,7 +25,7 @@ namespace SIMCIC.BLL.Metodos
             cit.InsertarCita(cita);
         }
 
-      
+
         public List<Cita> ListarCitasPorMedico(int cedulaMedico)
         {
             return cit.ListarCitasPorMedico(cedulaMedico);

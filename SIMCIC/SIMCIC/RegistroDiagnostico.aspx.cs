@@ -14,9 +14,9 @@ namespace SIMCIC
 
         }
 
-        protected void btnGuardar_Click(object sender, EventArgs e)
+        protected void btnMantenimiento_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("MantenimientoDiagnostico.aspx");
         }
     }
 }

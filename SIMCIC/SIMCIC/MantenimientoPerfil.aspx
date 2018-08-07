@@ -2,13 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
-        <section>
+    <br />
+    <br />
+    <br />      
             <div class="container ">
                 <div class="col-lg-6 col-lg-offset-3">
                     <div class="inner-form">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1" data-toggle="tab" style="background-color: #5BC0DE; line-height: 10px; font-weight: bold; color: #FFFFFF;">Mi Perfil</a></li>
+                            <li class="active"><a href="#tab1" data-toggle="tab">Mi Perfil</a></li>
                             <li><a href="#tab2" data-toggle="tab" style="background-color: #5BC0DE; line-height: 10px; font-weight: bold; color: #FFFFFF;">Registrar Perfil</a></li>
                         </ul>
                         <div class="tab-content panel-footer" style="background-color: #00548E">
@@ -138,6 +139,5 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </form>
+       
 </asp:Content>
