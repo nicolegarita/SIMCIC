@@ -11,7 +11,7 @@
         <strong id="textoMensajeError" runat="server"></strong>
     </div> 
 
-    <div id="divClientes" class="form-group" runat="server" visible="true" >
+    <div id="divClientes" visible="true" class="product-screen-1 wow fadeInLeft" runat="server" data-wow-delay="0.1s" data-wow-duration="0.1s">  
             <table class="table-condensed" align="center">
                 <h3 align="center">Registro de medicamentos</h3>
                 <tr>
@@ -24,7 +24,7 @@
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
                          <asp:Label ID="lblCantidad" runat="server" Text="Cantidad disponible: " ForeColor="#808080" type="int"></asp:Label>
                     <td>
-                        <asp:TextBox ID="txtCantidad" runat="server" placeholder="Cantidad" class="form-control" type="number"></asp:TextBox>
+                        <asp:TextBox ID="txtCantidad" runat="server" placeholder="Cantidad" class="form-control" TextMode="Number"></asp:TextBox>
                 </tr>
                 <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
@@ -58,16 +58,22 @@
                             <asp:ListItem>Línea Femenina</asp:ListItem>
                             <asp:ListItem>Estomacales</asp:ListItem>
                             <asp:ListItem>Analgésicos</asp:ListItem>
-                            <asp:ListItem>Inyectables</asp:ListItem>
+                            <asp:ListItem>Inyectable</asp:ListItem>
+                            <asp:ListItem>Vitaminas</asp:ListItem>
+                            <asp:ListItem>Otros</asp:ListItem>
+
                         </asp:DropDownList>
                 </tr>
             </table>
-            <div class="col-md-12 text-center">
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="btn btn-primary" Width="100px"/>
-            <div class="col-md-12 text-right">
-                <asp:Button ID="btnMantenimiento" runat="server" OnClick="btnMantenimiento_Click" Text="Mantenimiento" CssClass="btn btn-success" Width="150
-                    px"/>
+             <br />
+             <div class="col-lg-12 text-center">
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click"  class="btn btn-form"
+                       Width="130px" BorderStyle="None" Font-Bold="False" Font-Italic="False" CssClass="btn-info" ForeColor="White" Height="38px" />                              
             </div>
+        <br />
+         <div class="col-lg-12 text-center">
+             <asp:Button ID="btnMantenimiento" runat="server"  Text="Mantenimiento" class="btn btn-form"
+                       Width="130px" BorderStyle="None" Font-Bold="False" Font-Italic="False" CssClass="btn-warning" ForeColor="White" Height="38px" PostBackUrl="~/MantenimientoMedicamento.aspx" /> 
             </div>
 
         </div>

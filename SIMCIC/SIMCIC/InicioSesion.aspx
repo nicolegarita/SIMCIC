@@ -2,20 +2,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="active" style="border-style: none; border-color: #FFFFFF; background-image: url('img/prueba.png'); height: 196px;">
-        </div>
     <section>
         <br />
         <br />
-
+        <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.1s">  
         <div class="tab-content panel-footer" style="background-color: #FFFFFF" align="center">
             <div runat="server" class="panel-group">
                 <div class="container ">
                     <div class="col-lg-6 col-lg-offset-3 text-center" style="border: medium groove #E0E0E0">
                         <br />
-                        <br />
-                        <br />
+                       
                         <div class="inner-form">
+                            <h3>Iniciar sesión</h3>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                 <asp:TextBox ID="txtCorreo" runat="server" type="email" placeholder="Correo" class="form-control"></asp:TextBox>
@@ -39,16 +37,19 @@
                                     <br />
                                     <br />
                                     <br />
-                                    <br />
-                                    <br />
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
            
 
         </section>
-
+    <br />
+    <br />
+    <br />
+    <br />
 </asp:Content>

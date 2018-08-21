@@ -32,18 +32,19 @@ namespace SIMCIC
 
                 Cita cita = new Cita
                 {
-                    IdCita = Convert.ToInt32(txtId.Text),
+                    IdCita= Convert.ToInt32(txtId.Text),
                     NombrePaciente = txtNombre.Text,
                     Telefono = Convert.ToInt32(txttelefono.Text),
                     Fecha = txtFecha.Text,
                     Hora = txtHora.Text,
                     CedulaMedico = Convert.ToInt32(txtCedulaMedico.Text)
                 };
-                cit.ActualizarCita(cita);
+                cit.ActualizarCita(cita);                
                 mensaje.Visible = true;
                 mensajeError.Visible = false;
                 textoMensaje.InnerHtml = "Cita Modificada";
                 textoMensajeError.InnerHtml = string.Empty;
+                Limpiar();
 
             }
             catch (Exception)
@@ -91,7 +92,7 @@ namespace SIMCIC
             {
                 cit.EliminarCita(Convert.ToInt32(txtId.Text));
                 divCitas.Visible = false;
-
+               
 
             }
             catch (Exception)
@@ -116,9 +117,18 @@ namespace SIMCIC
                 textoMensaje.InnerHtml = string.Empty;
                 textoMensajeError.InnerHtml = "Error al buscar";
             }
-
+           
         }
+        public void Limpiar()
+        {
 
+            txtId.Text = "";
+            txtNombre.Text = "";
+            txttelefono.Text = "";
+            txtFecha.Text = "";
+            txtHora.Text = "";
+            txtCedulaMedico.Text = "";
+        }
 
     }
 }

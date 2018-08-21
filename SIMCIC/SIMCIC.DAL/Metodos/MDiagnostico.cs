@@ -44,5 +44,20 @@ namespace SIMCIC.DAL.Metodos
             return _db.Select<Diagnostico>(x => x.IdPaciente
                == idPaciente);
         }
+
+       
+
+        public Cita ObtenerFecha(int idCita)
+        {
+            return _db.Select<Cita>(x => x.IdCita == idCita).FirstOrDefault();
+
+
+        }
+
+        public List<View_Diagnosticos> ListarDiagnosticosF(int idPaciente)
+        {
+            return _db.SqlList<View_Diagnosticos>("EXEC sp_VerDiagnosticosPaciente {0}", idPaciente);
+        }
+
     }
 }

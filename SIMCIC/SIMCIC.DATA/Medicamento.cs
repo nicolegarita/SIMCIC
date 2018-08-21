@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
+using ServiceStack.DataAnnotations;
 
 namespace SIMCIC.DATA
 {
     public class Medicamento
     {
+        [AutoIncrement]
         public int IdMedicamento { get; set; }
         public string NombreMedicamento { get; set; }
         public int Cantidad { get; set; }

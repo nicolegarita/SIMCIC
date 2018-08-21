@@ -41,5 +41,11 @@ namespace SIMCIC.BLL.Metodos
         {
             return diag.ListarDiagnosticosPorPaciente(idPaciente);
         }
+
+
+        public List<View_Diagnosticos> ListarDiagnosticosF(int idPaciente)
+        {
+            return diag.ListarDiagnosticosF(idPaciente);
+        }
     }
 }
