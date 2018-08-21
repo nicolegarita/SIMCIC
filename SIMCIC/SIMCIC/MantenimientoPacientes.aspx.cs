@@ -91,8 +91,10 @@ namespace SIMCIC
                 txtCedula.Focus();             
                 mensaje.Visible = true;
                 mensajeError.Visible = false;
-                textoMensaje.InnerHtml = "Cliente Modificado";
+                textoMensaje.InnerHtml = "Cliente modificado correctamente";
                 textoMensajeError.InnerHtml = string.Empty;
+                Limpiar();
+
 
             }
             catch (Exception)
@@ -102,5 +104,17 @@ namespace SIMCIC
                 mensajeError.InnerHtml = "No se modificó el paciente";
             }
         }
+        public void Limpiar()
+        {
+            txtCedula.Text = "";
+            txtApellidos.Text = "";
+            txtCorreo.Text = "";
+            txtFechaNacimiento.Text = "";
+            txtEdad.Text = "";
+            txtNombre.Text = "";
+            txtOcupacion.Text = "";
+            txtTelefono.Text = "";
+        }
+
     }
 }

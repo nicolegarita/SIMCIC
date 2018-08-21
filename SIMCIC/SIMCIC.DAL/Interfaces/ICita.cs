@@ -19,6 +19,7 @@ namespace SIMCIC.DAL.Interfaces
         List<Cita> ListarCitasPorFecha(int cedulaMedico, string fecha);
         List<Cita> ListarCitasPorHora(int cedulaMedico, string hora);
         List<Cita> ListarCitasPorFechaHora(int cedulaMedico, string hora, string fecha);
+        
 
 
         void EliminarCita(int idCita);

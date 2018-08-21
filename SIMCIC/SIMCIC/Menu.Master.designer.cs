@@ -10,7 +10,7 @@
 namespace SIMCIC {
     
     
-    public partial class Login {
+    public partial class Menu {
         
         /// <summary>
         /// head control.

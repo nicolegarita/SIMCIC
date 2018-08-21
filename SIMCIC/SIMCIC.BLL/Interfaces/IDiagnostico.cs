@@ -20,5 +20,6 @@ namespace SIMCIC.BLL.Interfaces
         //Filtrado
         List<Diagnostico> ListarDiagnosticoPorCita(int idCita);
         List<Diagnostico> ListarDiagnosticosPorPaciente(int idPaciente);
+        List<View_Diagnosticos> ListarDiagnosticosF(int idPaciente);
     }
 }

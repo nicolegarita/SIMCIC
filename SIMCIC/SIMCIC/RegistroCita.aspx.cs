@@ -23,7 +23,25 @@ namespace SIMCIC
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            string Today = "" + DateTime.Now.Year + "-";
+            if (DateTime.Now.Month.ToString().Length == 1)
+            {
+                Today += "0" + DateTime.Now.Month;
+            }
+            else
+            {
+                Today += DateTime.Now.Month;
+            }
+            if (DateTime.Now.Day.ToString().Length == 1)
+            {
+                Today += "-0" + DateTime.Now.Day;
+            }
+            else
+            {
+                Today += "-" + DateTime.Now.Day;
+            }
 
+            txtFecha.Attributes["min"] = Today;
         }
 
         protected void btnContinuar_Click(object sender, EventArgs e)
@@ -32,7 +50,7 @@ namespace SIMCIC
 
             try
             {
-                Cita cita = ci.BuscarCita(txtHora.Text, txtFecha.Text, Convert.ToInt32(txtCedula.Text));
+                Cita cita = ci.BuscarCita(txtHora.Text, txtFecha.Text, Convert.ToInt32(txtCedulaMedico.Text));
                 if (cita != null)
                 {
                     txtHora.BorderColor = System.Drawing.Color.Red;
@@ -44,35 +62,59 @@ namespace SIMCIC
                 else
                 {
                     divCitas.Visible = true;
-                    divMedico.Visible = false;
+                   
 
                 }
 
             }
             catch (Exception)
             {
+                mensajeError.Visible = true;
+                mensaje.Visible = false;
+                textoMensajeError.InnerHtml = "Fecha y hora ya se encuentran ocupados";
             }
         }
 
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            Cita cit = new Cita
+            try
             {
-                NombrePaciente = txtNombre.Text,
-                Telefono = Convert.ToInt32(txtTelefono.Text),
-                Fecha = txtFecha.Text,
-                Hora = txtHora.Text,
-                CedulaMedico = Convert.ToInt32(txtCedula.Text)
+                Cita cit = new Cita
+                {
+                    NombrePaciente = txtNombre.Text,
+                    Telefono = Convert.ToInt32(txttelefono.Text),
+                    Fecha = txtFecha.Text,
+                    Hora = txtHora.Text,
+                    CedulaMedico = Convert.ToInt32(txtCedulaMedico.Text)
 
 
-            };
-            ci.InsertarCita(cit);
-            mensaje.Visible = true;
-            mensajeError.Visible = false;
-            mensaje.InnerHtml = "Cita correctamente registrada";
+                };
+                ci.InsertarCita(cit);
+                mensaje.Visible = true;
+                mensajeError.Visible = false;
+                mensaje.InnerHtml = "Cita correctamente registrada";
+                Limpiar();
+            }
+            catch (Exception)
+            {
+
+                mensajeError.Visible = true;
+                mensaje.Visible = false;
+                textoMensajeError.InnerHtml = "No se ha registrado la cita";
+            }
+           
 
 
+        }
+        public void Limpiar()
+        {
+           
+            txtNombre.Text = "";
+            txttelefono.Text = "";
+            txtFecha.Text = "";
+            txtHora.Text = "";
+            txtCedulaMedico.Text = "";
         }
 
     }
