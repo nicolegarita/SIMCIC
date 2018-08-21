@@ -10,6 +10,7 @@
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensajeError" runat="server"></strong>
     </div> 
+    <div id="div1" visible="true" class="product-screen-1 wow fadeInLeft" runat="server" data-wow-delay="0.1s" data-wow-duration="0.1s"> 
     <h3 align="center">Mantenimiento de Medicamentos</h3>
     <div id="duvBuscarPaciente" class="form-group" runat="server" visible="true" >
          <table class="table-condensed" align="center">
@@ -20,12 +21,13 @@
                     <td>
                         <asp:TextBox ID="txtNombreBuscar" runat="server" class="form-control"></asp:TextBox>
                         <td>                                                  
-                             <asp:Button ID="btnBuscar" OnClick="btnBuscar_Click" runat="server" Text="Buscar"  CssClass="btn btn-primary"  Width="100px"/>
+                             <asp:Button ID="btnBuscar" OnClick="btnBuscar_Click" runat="server" Text="Buscar" class="btn btn-form"
+                       Width="130px" BorderStyle="None" Font-Bold="False" Font-Italic="False" CssClass="btn-info" ForeColor="White" Height="38px" />
                 </tr>
              </table>
      
         </div>
-     <div id="divEncuentraInfo" class="form-group" runat="server" visible="true" >
+     <div id="divEncuentraInfo" visible="true" class="form-group" runat="server">
             <table class="table-condensed" align="center">               
                 <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
@@ -37,7 +39,7 @@
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
                          <asp:Label ID="lblCantidad" runat="server" Text="Cantidad disponible: " ForeColor="#808080" type="int"></asp:Label>
                     <td>
-                        <asp:TextBox ID="txtCantidad" runat="server" placeholder="Cantidad" class="form-control" type="number"></asp:TextBox>
+                        <asp:TextBox ID="txtCantidad" runat="server" TextMode="Number" placeholder="Cantidad" class="form-control" ></asp:TextBox>
                 </tr>
                 <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
@@ -77,9 +79,11 @@
                 </tr>
             </table>
             <div class="col-md-12 text-center">
-                <asp:Button ID="btnModificar" OnClick="btnModificar_Click" runat="server" Text="Guardar"  CssClass="btn btn-warning" Width="100px"/>
+                <asp:Button ID="btnModificar" OnClick="btnModificar_Click" runat="server" Text="Modificar"  class="btn btn-form"
+                       Width="130px" BorderStyle="None" Font-Bold="False" Font-Italic="False" CssClass="btn-warning" ForeColor="White" Height="38px" />
             </div>
 
+        </div>
         </div>
 
 </asp:Content>

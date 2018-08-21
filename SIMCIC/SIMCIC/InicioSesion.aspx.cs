@@ -21,7 +21,7 @@ namespace SIMCIC
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("RegistrarMedicamentos.aspx");
+            Response.Redirect("MenuPrincipal.aspx");
         }
     }
 }

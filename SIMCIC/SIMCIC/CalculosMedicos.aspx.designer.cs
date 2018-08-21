@@ -10,7 +10,7 @@
 namespace SIMCIC {
     
     
-    public partial class MantenimientoCita {
+    public partial class CalculosMedicos {
         
         /// <summary>
         /// mensaje control.
@@ -49,228 +49,165 @@ namespace SIMCIC {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl textoMensajeError;
         
         /// <summary>
-        /// divBusqueda control.
+        /// lblPesoIMC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divBusqueda;
+        protected global::System.Web.UI.WebControls.Label lblPesoIMC;
         
         /// <summary>
-        /// divBuscarFecha control.
+        /// txtPesoIMC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divBuscarFecha;
+        protected global::System.Web.UI.WebControls.TextBox txtPesoIMC;
         
         /// <summary>
-        /// lblBuscarFecha control.
+        /// lblAlturaIMC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBuscarFecha;
+        protected global::System.Web.UI.WebControls.Label lblAlturaIMC;
         
         /// <summary>
-        /// txtFechaBuscar control.
+        /// txtAlturaIMC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaBuscar;
+        protected global::System.Web.UI.WebControls.TextBox txtAlturaIMC;
         
         /// <summary>
-        /// Label2 control.
+        /// lblResultadoIMC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblResultadoIMC;
         
         /// <summary>
-        /// txtMedicoBuscar control.
+        /// txtResultadoIMC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMedicoBuscar;
+        protected global::System.Web.UI.WebControls.TextBox txtResultadoIMC;
         
         /// <summary>
-        /// btnBuscarFecha control.
+        /// lblClasificación control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscarFecha;
+        protected global::System.Web.UI.WebControls.Label lblClasificación;
         
         /// <summary>
-        /// lvCitas control.
+        /// txtClasificacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvCitas;
+        protected global::System.Web.UI.WebControls.TextBox txtClasificacion;
         
         /// <summary>
-        /// divCitas control.
+        /// btnCalcular control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divCitas;
+        protected global::System.Web.UI.WebControls.Button btnCalcular;
         
         /// <summary>
-        /// Label1 control.
+        /// lblPesoDosi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblPesoDosi;
         
         /// <summary>
-        /// txtId control.
+        /// txtPesoDosi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtId;
+        protected global::System.Web.UI.WebControls.TextBox txtPesoDosi;
         
         /// <summary>
-        /// lblFecha control.
+        /// lblDosis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFecha;
+        protected global::System.Web.UI.WebControls.Label lblDosis;
         
         /// <summary>
-        /// txtFecha control.
+        /// txtDosis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFecha;
+        protected global::System.Web.UI.WebControls.TextBox txtDosis;
         
         /// <summary>
-        /// lblHora control.
+        /// lblFrecuencia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHora;
+        protected global::System.Web.UI.WebControls.Label lblFrecuencia;
         
         /// <summary>
-        /// txtHora control.
+        /// txtFrecuencia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtHora;
+        protected global::System.Web.UI.WebControls.TextBox txtFrecuencia;
         
         /// <summary>
-        /// lblNombre control.
+        /// lblResultadoDosi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombre;
+        protected global::System.Web.UI.WebControls.Label lblResultadoDosi;
         
         /// <summary>
-        /// txtNombre control.
+        /// txtResultadoDosi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
+        protected global::System.Web.UI.WebControls.TextBox txtResultadoDosi;
         
         /// <summary>
-        /// lblApellidos control.
+        /// CalcularDosificacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblApellidos;
-        
-        /// <summary>
-        /// txtApellidos control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApellidos;
-        
-        /// <summary>
-        /// lblTelefono control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTelefono;
-        
-        /// <summary>
-        /// txttelefono control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttelefono;
-        
-        /// <summary>
-        /// lblCedulaMedico control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCedulaMedico;
-        
-        /// <summary>
-        /// txtCedulaMedico control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCedulaMedico;
-        
-        /// <summary>
-        /// btnModificar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnModificar;
-        
-        /// <summary>
-        /// btnEliminar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEliminar;
+        protected global::System.Web.UI.WebControls.Button CalcularDosificacion;
     }
 }

@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <section>
+    <div class="product-screen-1 wow fadeInLeft" runat="server" data-wow-delay="0.1s" data-wow-duration="0.1s"> 
             <h3 align="center">Recuperación de la cuenta</h3>
             <br />
             <br />
@@ -95,5 +96,6 @@
             <br />
             <br />
             <br />
+        </div>
         </section>
 </asp:Content>

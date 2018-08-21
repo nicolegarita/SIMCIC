@@ -71,19 +71,30 @@ namespace SIMCIC
                     DosisNiños = txtDosisNiños.Text,
                     IdCategoria = ddlSexo.SelectedIndex
                 };
-                med.ActualizarMedicamento(medicamento);                         
+                med.ActualizarMedicamento(medicamento);
                 mensaje.Visible = true;
                 mensajeError.Visible = false;
-                textoMensaje.InnerHtml = "Cliente Modificado";
+                textoMensaje.InnerHtml = "Medicamento Modificado";
                 textoMensajeError.InnerHtml = string.Empty;
+                Limpiar();
 
             }
             catch (Exception)
             {
                 mensaje.Visible = false;
                 mensajeError.Visible = true;
-                mensajeError.InnerHtml = "No se modificó el paciente";
+                mensajeError.InnerHtml = "No se modificó el medicamento";
             }
         }
+        public void Limpiar()
+        {
+
+            txtNombre.Text = "";
+            txtCantidad.Text = "";
+            txtSuministracion.Text = "";
+            txtFecha.Value = "";
+            txtDosisAdulto.Text = "";
+            txtDosisNiños.Text = "";
+        }
     }
-}
+    }

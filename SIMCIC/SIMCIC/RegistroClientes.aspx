@@ -12,14 +12,15 @@
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
         <strong id="textoMensajeError" runat="server"></strong>
     </div> 
-    <div id="divClientes" class="form-group" runat="server" visible="true" >
+     <div class="product-screen-1 wow fadeInLeft" runat="server" data-wow-delay="0.1s" data-wow-duration="0.1s">    
+    <div id="divClientes" class="form-group" runat="server" visible="true">
             <table class="table-condensed" align="center">
                 <h3 align="center">Registro de pacientes</h3>
                 <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
                         <asp:Label ID="lblCedula" runat="server" Text="Cédula del paciente: " ForeColor="#808080"></asp:Label>
                     <td>
-                        <asp:TextBox ID="txtCedula" runat="server" placeholder="Cédula" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtCedula" runat="server" TextMode="Number" placeholder="Cédula" class="form-control"></asp:TextBox>
                 </tr>
                 <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
@@ -37,13 +38,13 @@
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
                          <asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha de nacimiento: " ForeColor="#808080"></asp:Label></td>
                     <td>
-                         <asp:TextBox ID="txtFechaNacimiento" runat="server" placeholder="Fecha" class="form-control"></asp:TextBox>
+                         <asp:TextBox ID="txtFechaNacimiento" runat="server" placeholder="Fecha" TextMode="Date" class="form-control"></asp:TextBox>
                 </tr>
                  <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
                          <asp:Label ID="lblEdad" runat="server" Text="Edad del paciente: " ForeColor="#808080"></asp:Label></td>
                     <td>
-                         <asp:TextBox ID="txtEdad" runat="server" placeholder="Edad" class="form-control"></asp:TextBox>
+                         <asp:TextBox ID="txtEdad" TextMode="Number" runat="server" placeholder="Edad" class="form-control"></asp:TextBox>
                 </tr>
                 <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
@@ -59,13 +60,13 @@
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
                          <asp:Label ID="lblTelefono" runat="server" Text="Teléfono de contacto: " ForeColor="#808080"></asp:Label></td>
                     <td>
-                         <asp:TextBox ID="txtTelefono" runat="server" placeholder="Teléfono" class="form-control"></asp:TextBox>
+                         <asp:TextBox ID="txtTelefono" TextMode="Number" runat="server" placeholder="Teléfono" class="form-control"></asp:TextBox>
                 </tr>
                 <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
                          <asp:Label ID="lblCorreo" runat="server" Text="Correo electrónico: " ForeColor="#808080"></asp:Label></td>
                     <td>
-                         <asp:TextBox ID="txtCorreo" runat="server" placeholder="Correo" class="form-control" type="email"></asp:TextBox>
+                         <asp:TextBox ID="txtCorreo" runat="server" placeholder="Correo" class="form-control" TextMode="Email"></asp:TextBox>
                 </tr>
                  <tr>
                     <td style="margin: 20px 20px 15px 15px; padding: 20px 10px 15px 15px;">
@@ -74,11 +75,19 @@
                          <asp:TextBox ID="txtOcupacion" runat="server" placeholder="Ocupación" class="form-control"></asp:TextBox>
                 </tr>
             </table>
-           <div class="col-md-12 text-center">
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" CssClass="btn btn-primary" Width="100px"/>
-            <asp:Button ID="btnMantenimiento" runat="server" OnClick="btnMantenimiento_Click" Text="Mantenimiento" CssClass="btn btn-success" Width="150
-                    px"/>
+        <br />
+           <div class="col-lg-12 text-center">
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click"   class="btn btn-form"
+                       Width="130px" BorderStyle="None" Font-Bold="False" Font-Italic="False" CssClass="btn-info" ForeColor="White" Height="38px" />                              
+            </div>
+        <br />
+         <div class="col-lg-12 text-center">
+             <asp:Button ID="btnMantenimiento" runat="server" OnClick="btnMantenimiento_Click" Text="Mantenimiento" class="btn btn-form"
+                       Width="130px" BorderStyle="None" Font-Bold="False" Font-Italic="False" CssClass="btn-warning" ForeColor="White" Height="38px" /> 
             </div>
                </div>
+         </div>
+
+   
   
 </asp:Content>

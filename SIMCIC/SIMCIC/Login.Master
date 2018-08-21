@@ -1,17 +1,15 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="SIMCIC.Login" %>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>SIMCIC</title>
+ 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/icc3.png" rel="icon">
+  <link href="img/icc.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -39,12 +37,36 @@
 </head>
 
 <body>
-     <form id="form2" runat="server">
-   
+     <form id="form1" runat="server">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" style="background: linear-gradient(45deg,#00548E, #37A8DD)">
+    <div class="container">
+<div id="logo" class="pull-left" >
+        <h3><a href="#intro" style="color: #FFFFFF" class="scrollto">Sistema Informático Médico Clínica Integral las Catalinas</a></h3>      
+      </div>
+    <%-- <a class="navbar-brand" href="#"><img src="img/LogoC.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>--%>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+         
+           
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+         <section>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 
- 
+ </section>
   <!--==========================
     Footer
   ============================-->
@@ -90,5 +112,4 @@
 </form>
 </body>
 </html>
-
 

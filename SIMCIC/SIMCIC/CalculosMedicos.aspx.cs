@@ -1,7 +1,4 @@
-﻿using SIMCIC.BLL.Interfaces;
-using SIMCIC.BLL.Metodos;
-using SIMCIC.DATA;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,16 +7,8 @@ using System.Web.UI.WebControls;
 
 namespace SIMCIC
 {
-    public partial class RegistroDiagnostico : System.Web.UI.Page
+    public partial class CalculosMedicos : System.Web.UI.Page
     {
-        public IDiagnostico diag;
-
-        public RegistroDiagnostico()
-        {
-            diag = new MDiagnostico();
-        }
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -37,68 +26,8 @@ namespace SIMCIC
                 mensajeError.Visible = true;
                 mensajeError.InnerHtml = "Digite valores válidos";
             }
+          
 
-
-        }
-
-        protected void btnGuardar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Diagnostico diagnostico = new Diagnostico
-                {
-                    IdCita = Convert.ToInt32(txtCita.Text),
-                    APP = txtAPP.Text,
-                    APnP = txtAPNP.Text,
-                    AQx = txtAQX.Text,
-                    AGO = txtAGO.Text,
-                    ATx = txtATX.Text,
-                    Motivo = txtMotivo.Text,
-                    PlanMedico = txtPlanMedico.Text,
-                    Incapacidad = txtIncapacidad.Text,
-                    ExFx = txtExFx.Text,
-                    Analisis = txtAnalisis.Text,
-                    Referencia = txtReferencia.Text,
-                    IPX = txtIPX.Text,
-                    IdPaciente = Convert.ToInt64(txtCedulaPaciente.Text)
-
-                };
-                diag.InsertarDiagnostico(diagnostico);
-                mensaje.Visible = true;
-                mensajeError.Visible = false;
-                mensaje.InnerHtml = "Diagnostico registrado satisfactoriamente";
-                Limpiar();
-
-
-            }
-            catch (Exception) {
-                mensaje.Visible = false;
-                mensajeError.Visible = true;
-                mensajeError.InnerHtml = "No se registró correctamente";
-            }
-
-
-
-
-
-        }
-
-       
-        public void Limpiar()
-        {         
-            txtAPP.Text = "";
-            txtAPNP.Text = "";
-            txtAQX.Text = "";
-            txtAGO.Text = "";
-            txtATX.Text = "";
-            txtMotivo.Text = "";
-            txtPlanMedico.Text = "";
-            txtIncapacidad.Text = "";
-            txtExFx.Text = "";
-            txtAnalisis.Text = "";    
-            txtReferencia.Text = "";
-            txtIPX.Text = "";
-    
         }
 
         protected void btnCalcular_Click(object sender, EventArgs e)
@@ -125,7 +54,7 @@ namespace SIMCIC
                     txtClasificacion.Text = "Infrapeso: Delgadez aceptable";
 
                 }
-                else if (18.50 < resultado && resultado < 24.49)
+                else if (18.50 <resultado && resultado < 24.49)
                 {
                     txtClasificacion.Text = "Peso normal";
                 }
@@ -152,6 +81,19 @@ namespace SIMCIC
                 mensajeError.Visible = true;
                 mensajeError.InnerHtml = "Digite valores válidos";
             }
+
+
+        }
+
+
+        public void limpiarCampos() {
+            txtAlturaIMC.Text = "";
+            txtPesoIMC.Text = "";
+            txtDosis.Text = "";
+            txtFrecuencia.Text = "";
+            txtPesoDosi.Text = "";
+            
+
         }
     }
 }

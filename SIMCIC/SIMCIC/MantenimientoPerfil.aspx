@@ -5,12 +5,12 @@
     <br />
     <br />
     <br />      
-            <div class="container ">
+          <div class="product-screen-1 wow fadeInLeft" runat="server" data-wow-delay="0.1s" data-wow-duration="0.1s"> 
                 <div class="col-lg-6 col-lg-offset-3">
                     <div class="inner-form">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#tab1" data-toggle="tab">Mi Perfil</a></li>
-                            <li><a href="#tab2" data-toggle="tab" style="background-color: #5BC0DE; line-height: 10px; font-weight: bold; color: #FFFFFF;">Registrar Perfil</a></li>
+                            <li><a href="#tab2" data-toggle="tab"  line-height: 10px; font-weight: bold; color: #FFFFFF;">Registrar Perfil</a></li>
                         </ul>
                         <div class="tab-content panel-footer" style="background-color: #00548E">
                             <div class="tab-pane active in fade" id="tab1">

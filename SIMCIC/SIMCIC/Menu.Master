@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Formularios.master.cs" Inherits="SIMCIC.Formularios" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="SIMCIC.Menu" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,19 +46,13 @@
   <header id="header" style="background: linear-gradient(45deg,#00548E, #37A8DD)">
     <div class="container">
 <div id="logo" class="pull-left" >
-        <h1><a href="MenuPrincipal.aspx" class="scrollto">SIMCIC</a></h1>      
+        <h1><a href="#intro" class="scrollto">SIMCIC</a></h1>      
       </div>
     <%-- <a class="navbar-brand" href="#"><img src="img/LogoC.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>--%>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="active"><a href="MenuPrincipal.aspx">Inicio</a></li>
-            <li class=""><a href="RegistroClientes.aspx">Pacientes</a></li>
-            <li class=""><a href="RegistroDiagnostico.aspx">Diagnósticos</a></li>             
-            <li class=""><a href="RegistroCita.aspx">Citas</a></li>
-            <li class=""><a href="RegistrarMedicamentos.aspx">Medicamentos</a></li>
-             <li class=""><a href="CalculosMedicos.aspx">Cálculos</a></li>
-             <li class=""><a href="MantenimientoPerfil.aspx">Perfil</a></li>
+         
            
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -69,14 +63,11 @@
     <br />
     <br />
     <br />
-        
          <section>
-            
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 
  </section>
-             
   <!--==========================
     Footer
   ============================-->
@@ -123,22 +114,3 @@
 </body>
 </html>
 
-
-
-<%--<!DOCTYPE html>
-
-<html>
-<head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
-</body>
-</html>--%>
